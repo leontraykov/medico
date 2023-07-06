@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.chat-input {
+  flex-shrink: 0;
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h1 class="mb-4"><%= @chat_room.name %></h1>
+
+  <h2>Participants:</h2>
+  <ul>
+    <% @chat_room.users.each do |user| %>
+      <li><%= user.name %></li> <!-- or user.email or whatever field you want to display -->
+    <% end %>
+  </ul>
+
+  <%= turbo_frame_tag 'messages' do %>
+    <div id="messages" class="mb-4">
+      <% @chat_room.messages.each do |message| %>
+        <%= render message %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <%= form_with model: [ @chat_room, Message.new ], local: false, class: 'mb-4' do |form| %>
+    <div class="input-group">
+      <%= form.text_field :content, class: 'form-control', placeholder: 'Write a message...' %>
+      <div class="input-group-append">
+        <%= form.submit 'Send', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  <% end %>
+</div>

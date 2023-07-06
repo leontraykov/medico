@@ -1,0 +1,8 @@
+<%= turbo_frame_tag dom_id(message) do %>
+  <div class="message mb-2">
+    <div class="card mb-2">
+      <div class="card-body">
+        <strong><%= message.user.name %></strong>: <%= message.content %>
+    </div>
+  </div>
+<% end %>
