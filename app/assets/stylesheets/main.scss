@@ -1,23 +1,32 @@
-html, body {
-  height: 100%;
+.messages {
+  overflow: none;
+  position: relative;
+  height: 60vh;
+  border: 1px solid #f0f0f0;
+
+  &-inner {
+    overflow: auto;
+    position: absolute;
+    max-height: 60vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .message {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.container {
-  min-height: 100%;
+.form-control {
+  width: auto;
 }
 
-.chatroom {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.width-70 {
+  width: 70%;
 }
 
-.chat-messages {
-  flex-grow: 1;
-  overflow-y: auto;
-}
-
-.chat-input {
-  flex-shrink: 0;
-  padding: 10px;
+.fit-content {
+  width: fit-content;
 }

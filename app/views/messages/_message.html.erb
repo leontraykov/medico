@@ -1,8 +1,13 @@
 <%= turbo_frame_tag dom_id(message) do %>
-  <div class="message mb-2">
-    <div class="card mb-2">
+  <div class="message my-2">
+    <div class="card mx-2 fit-content">
+      <div class="card-header d-flex justify-content-between flex-column">
+        <span class="badge rounded-pill text-secondary">  <%= message.created_at.strftime("%H:%M") %></span>
+        <strong><%= message.user.name %>:</strong>
+      </div>
       <div class="card-body">
-        <strong><%= message.user.name %></strong>: <%= message.content %>
+        <%= message.content %>
+      </div>
     </div>
   </div>
 <% end %>
