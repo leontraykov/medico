@@ -3,6 +3,8 @@ class ChatRoomsController < ApplicationController
   
   def index
     @chat_rooms = ChatRoom.all
+    @users = User.without_me(@current_user)
+    @user = current_user
   end
 
   def new
@@ -23,9 +25,17 @@ class ChatRoomsController < ApplicationController
   end
   
   def show
-    @chat_room = ChatRoom.find(params[:id])
+    @room = ChatRoom.new
+    @single_room = ChatRoom.find(params[:id])
+    @rooms = ChatRoom.all
+
     @message = Message.new
-    @messages = @chat_room.messages.order(created_at: :desc)
+    @messages = @single_room.messages.order(created_at: :desc)
+
+    @current_user = current_user
+    @users = User.without_me(@current_user)
+
+    # render "index"
   end
 
   private

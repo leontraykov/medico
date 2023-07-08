@@ -1,10 +1,10 @@
-<div data-controller="chat-room" data-chat-room-id="<%= @chat_room.id %>">
+<div data-controller="chat-room" data-chat-room-id="<%= @single_room.id %>">
   <div class="container mt-4">
     <div class="mb-3">
-      <h1>Чат: <%= @chat_room.name %></h1>
+      <h1>Чат: <%= @single_room.name %></h1>
       <h2>Участники:</h2>
       <ul>
-        <% @chat_room.users.each do |user| %>
+        <% @single_room.users.each do |user| %>
           <li><%= user.name %></li>
         <% end %>
       </ul>
@@ -12,20 +12,26 @@
     </div>
 
     <div class="messages mb-4 col-12"> <!-- Adjust the height accordingly -->
-      <%= turbo_frame_tag 'messages' do %>
-        <div class="messages-inner" id="messages">
-          <%= render @chat_room.messages %>
-        </div>
-      <% end %>
+      
+      <%= turbo_stream_from @single_room %>
+      <div class="messages-inner"  id="messages">
+      </div>
+
     </div>
 
+    <div class="d-flex justify-content-evenly">
+      <%= render partial: 'layouts/new_message_form' %>
+    </div>
+
+<!--    
     <div class="mb-4 col-12">
-      <%= form_with model: [@chat_room, Message.new], local: false do |form| %>
+      <%= form_with model: [@single_room, Message.new], local: false do |form| %>
         <div class="d-flex justify-content-evenly">
           <%= form.text_field :content, class: 'form-control width-70 col-md-8', placeholder: 'Напишите сообщение' %>
           <%= form.submit 'Отправить', class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>
+    -->
   </div>
 </div>

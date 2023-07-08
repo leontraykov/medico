@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :messages
+  has_many :messages, dependent: :nullify
   has_many :chat_rooms, through: :chat_room_users
 
   validates :name, :email, presence: true, uniqueness: true
@@ -12,18 +12,18 @@ class User < ApplicationRecord
 
 
   before_validation :set_name, on: :create
+  scope :without_me, ->(user) { where.not(id: user) }
+
+  after_create_commit { broadcast_append_to "users" }
 
 private
-  def set_name
-    self.name = "User ##{rand(999)}" if self.name.blank?
-  end
 
-  def set_current_user
-    @user = current_user
+def set_name
+    self.name = "Болтун ##{rand(999)}" if self.name.blank?
   end
 
   def user_params
     params.require(:user).permit(:name, :email)
   end
-       
+
 end

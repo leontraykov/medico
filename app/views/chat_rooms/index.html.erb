@@ -4,7 +4,8 @@
     <div class="col-md-8">
       <div class="card text-center mt-4 mb-4">
         <div class="card-body">
-          Welcome to ChatChat, <b><%= current_user.name %></b>!
+          <p>Это ЧатЧат! Болтать разрешено!</p>
+          <p>Особенно тебе<%= @user.nil? ? "" : ", #{@user.name}" %>!</p>
         </div>
       </div>
       </div>
@@ -12,15 +13,24 @@
   </div>
 
   <div class="d-flex justify-content-between align-items-center">
-    <h1 class="mb-4">Chat Rooms</h1>
-    <%= link_to 'Create new Chat Room', new_chat_room_path, class: 'btn btn-primary' %>
+    <h1 class="mb-4">Собеседники:</h1>
   </div>
 
-  <div class="list-group">
-    <% @chat_rooms.each do |chat_room| %>
-      <div class="list-group-item list-group-item-action">
-        <%= link_to chat_room.name, chat_room_path(chat_room) %>
-      </div>
-    <% end %>
+  <%= turbo_stream_from "users" %>
+  <div class="list-group" id="users">
+    <%= render @users %>
+  </div>
+
+  <hr>
+
+  <div class="d-flex justify-content-between align-items-center">
+    <h1 class="mb-4">Чат-комнаты:</h1>
+    <%= link_to 'Создать новую комнату', new_chat_room_path, class: 'btn btn-primary' %>
+  </div>
+
+
+  <%= turbo_stream_from "chat_rooms" %>
+  <div class="list-group" id="chat_rooms">
+    <%= render @chat_rooms %>
   </div>
 </div>
