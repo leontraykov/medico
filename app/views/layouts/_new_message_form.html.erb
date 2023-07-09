@@ -1,6 +1,6 @@
-<div class="form-group msg-form">
-  <%= form_with(model: [@single_room ,@message], remote: true, class: "d-flex" ) do |f| %>
-    <%= f.text_field :content, id: 'chat-text', class: "form-control msg-content", autocomplete: 'off' %>
-    <%= f.submit data: { disable_with: false }, class: "btn btn-primary" %>
+<div class="input-group my-4 row d-flex justify-content-center">
+  <%= form_with(model: [@exact_room ,@message], remote: true, class: "d-flex col-10 justify-content-center" ) do |f| %>
+    <%= f.text_field :content, id: "chat-text", class: "form-control mx-4 rounded-4", placeholder: "Напишите сообщение...", autocomplete: "off" %>
+    <%= f.submit "Отправить", data: { disable_with: false }, class: "btn rounded-4 btn-outline-warning", style: "padding-top: .55rem;" %>
   <% end %>
 </div>

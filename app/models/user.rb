@@ -18,7 +18,7 @@ class User < ApplicationRecord
 
 private
 
-def set_name
+  def set_name
     self.name = "Болтун ##{rand(999)}" if self.name.blank?
   end
 

@@ -8,12 +8,21 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <style>
+      .msg-<%= current_user&.id %> {
+        background-color: cornflowerblue !important;
+        padding: 10px;
+      }
+      .cont-<%= current_user&.id %> {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+  <body class="bg-dark text-white">
     <%= yield %>
   </body>
 </html>

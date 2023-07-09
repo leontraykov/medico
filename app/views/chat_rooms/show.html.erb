@@ -1,37 +1,19 @@
-<div data-controller="chat-room" data-chat-room-id="<%= @single_room.id %>">
-  <div class="container mt-4">
-    <div class="mb-3">
-      <h1>Чат: <%= @single_room.name %></h1>
-      <h2>Участники:</h2>
-      <ul>
-        <% @single_room.users.each do |user| %>
-          <li><%= user.name %></li>
-        <% end %>
-      </ul>
-      <%= link_to "Leave", root_path %>
-    </div>
+<div class="container my-4">
+  <h2 class="fs-1">Чат-комната: <%= @exact_room.name %></h2>
 
-    <div class="messages mb-4 col-12"> <!-- Adjust the height accordingly -->
-      
-      <%= turbo_stream_from @single_room %>
-      <div class="messages-inner"  id="messages">
-      </div>
+  <h3>Участники чата:</h3>
+  <ul>
+    <% @exact_room.users.each do |user| %>
+      <li><%= user.name %></li>
+    <% end %>
+  </ul>
 
-    </div>
+  <%= link_to "Выйти", root_path, class:"fs-5 text-white-50" %>
 
-    <div class="d-flex justify-content-evenly">
-      <%= render partial: 'layouts/new_message_form' %>
-    </div>
-
-<!--    
-    <div class="mb-4 col-12">
-      <%= form_with model: [@single_room, Message.new], local: false do |form| %>
-        <div class="d-flex justify-content-evenly">
-          <%= form.text_field :content, class: 'form-control width-70 col-md-8', placeholder: 'Напишите сообщение' %>
-          <%= form.submit 'Отправить', class: 'btn btn-primary' %>
-        </div>
-      <% end %>
-    </div>
-    -->
+  <%= turbo_stream_from @exact_room %>
+  <div id="messages" class="message-field mt-4 border border-light rounded-4">
+    <%= render @messages %>
   </div>
+
+  <%= render partial: "layouts/new_message_form" %>
 </div>
