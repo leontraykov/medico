@@ -12,11 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2023_07_06_194221) do
-=======
-ActiveRecord::Schema[7.0].define(version: 20_230_706_222_303) do
->>>>>>> 2f86762 (default rubocop rules)
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -35,7 +31,6 @@ ActiveRecord::Schema[7.0].define(version: 20_230_706_222_303) do
     t.datetime 'updated_at', null: false
   end
 
-<<<<<<< HEAD
   create_table "messages", force: :cascade do |t|
     t.text "content"
     t.bigint "user_id", null: false
@@ -44,17 +39,6 @@ ActiveRecord::Schema[7.0].define(version: 20_230_706_222_303) do
     t.datetime "updated_at", null: false
     t.index ["chat_room_id"], name: "index_messages_on_chat_room_id"
     t.index ["user_id"], name: "index_messages_on_user_id"
-=======
-  create_table 'messages', force: :cascade do |t|
-    t.text 'content'
-    t.bigint 'user_id', null: false
-    t.bigint 'chat_room_id', null: false
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.text 'message'
-    t.index ['chat_room_id'], name: 'index_messages_on_chat_room_id'
-    t.index ['user_id'], name: 'index_messages_on_user_id'
->>>>>>> 2f86762 (default rubocop rules)
   end
 
   create_table 'users', force: :cascade do |t|

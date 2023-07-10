@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-AllCops:
-  Exclude:
-    - 'db/**/*'
-    - 'config/**/*'
-    - 'script/**/*'
-    - 'bin/**/*'
-    - 'vendor/**/*'
-=======
 # Common configuration.
 
 AllCops:
