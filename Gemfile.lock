@@ -66,11 +66,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-<<<<<<< HEAD
-=======
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
->>>>>>> 2f86762 (default rubocop rules)
     ast (2.4.2)
     bcrypt (3.1.19)
     bindex (0.8.1)
@@ -187,7 +184,7 @@ GEM
     rake (13.0.6)
     redis (4.8.1)
     regexp_parser (2.8.1)
-    reline (0.3.5)
+    reline (0.3.6)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -283,4 +280,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.3.24
+   2.4.10
