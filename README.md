@@ -25,6 +25,10 @@
     bundle install
     yarn install
 
+Сборка стилей:
+    yarn build:css
+    yarn build:js
+
 Создайте базу данных и выполните миграции:
 
     rails db:create
