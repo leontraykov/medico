@@ -17,7 +17,7 @@
 
 Сначала клонируйте репозиторий:
 
-    git clone https://github.com/leontraykov/chat.git<br>
+    git clone https://github.com/leontraykov/chat.git
     cd chat
 
 Установите зависимости:
