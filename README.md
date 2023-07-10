@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ЧатЧат
 
-Things you may want to cover:
+Это приложение - чат, где пользователи могут создавать комнаты и обмениваться сообщениями в реальном времени. Это проект был разработан с использованием следующих технологий:
 
-* Ruby version
+    Ruby on Rails 7.0.5.1, PostgreSQL, Hotwire Turbo & Stimulus, Rspec, Devise, Bootstrap 5
 
-* System dependencies
+Функциональность
 
-* Configuration
+    Создание и вход в комнаты для общения.
+    Обмен сообщениями в реальном времени.
+    Автоматическое обновление списка пользователей, чат-комнат и сообщений при появлении новых.
+    Очистка поля ввода после отправки сообщения.
 
-* Database creation
+Установка и Запуск
 
-* Database initialization
+Сначала клонируйте репозиторий:
 
-* How to run the test suite
+git clone https://github.com/leontraykov/chat.git
+cd chat
 
-* Services (job queues, cache servers, search engines, etc.)
+Установите зависимости:
 
-* Deployment instructions
+bundle install
+yarn install
 
-* ...
+Создайте базу данных и выполните миграции:
+
+rails db:create
+rails db:migrate
+
+Запустите сервер:
+
+rails s
+
+Теперь вы можете открыть приложение в браузере по адресу http://localhost:3000.
