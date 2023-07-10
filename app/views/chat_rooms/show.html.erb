@@ -11,7 +11,7 @@
   <%= link_to "Выйти", root_path, class:"fs-5 text-white-50" %>
 
   <%= turbo_stream_from @exact_room %>
-  <div id="messages" class="message-field mt-4 border border-light rounded-4">
+  <div id="messages" data-controller="scroll" class="message-field mt-4 border border-light rounded-4">
     <%= render @messages %>
   </div>
 

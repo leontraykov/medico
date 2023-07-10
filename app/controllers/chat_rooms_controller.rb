@@ -30,7 +30,7 @@ class ChatRoomsController < ApplicationController
     @rooms = ChatRoom.all
 
     @message = Message.new
-    @messages = @exact_room.messages.order(created_at: :desc)
+    @messages = @exact_room.messages.order(created_at: :asc)
 
     @current_user = current_user
     @users = User.without_me(@current_user)

@@ -1,16 +1,16 @@
-<div class="container mt-4 width-50 border border-light px-4 py-4 rounded-4">
+<div class="container mt-4 width-50 border border-light px-4 py-4 rounded-4 shadow shadow-light">
   <h2>Войти</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.label :email, class:"form-label" %><br />
+      <%= f.label :email, class:"form-label fw-bold" %><br />
       <%= f.email_field :email, class:"form-control mb-2", autofocus: true, autocomplete: "email" %>
     </div>
 
     <div class="field">
-      <%= f.label :password, "Пароль", class:"form-label" %><br />
+      <%= f.label :password, "Пароль", class:"form-label fw-bold" %><br />
       <%= f.password_field :password, class:"form-control mb-2", autocomplete: "current-password" %>
     </div>
 
@@ -22,7 +22,7 @@
     <% end %>
 
     <div class="actions">
-      <%= f.submit "Войти", class:"text-center my-4 btn btn-outline-warning" %>
+      <%= f.submit "Войти", class:"text-center my-4 btn btn-outline-warning fw-bold" %>
     </div>
   <% end %>
 

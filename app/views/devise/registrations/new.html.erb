@@ -5,31 +5,31 @@
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.label :name, "Имя", class:"form-label" %><br />
+      <%= f.label :name, "Имя", class:"form-label fw-bold" %><br />
       <%= f.text_field :name, class:"form-control mb-2", autofocus: true, autocomplete: "name" %>
     </div>
 
     <div class="field">
-      <%= f.label :email, class:"form-label" %><br />
-      <%= f.email_field :email, class:"form-control mb-2", autofocus: true, autocomplete: "email" %>
+      <%= f.label :email, class:"form-label fw-bold" %><br />
+      <%= f.email_field :email, class:"form-control mb-2 ", autofocus: true, autocomplete: "email" %>
       <div id="emailHelp" class="form-text text-light mb-2">Мы никогда не передаем Ваши данные третьим лицам</div>
     </div>
 
     <div class="field">
-      <%= f.label :password, "Пароль",class:"form-label" %>
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
+      <%= f.label :password, "Пароль",class:"form-label fw-bold" %>
       <%= f.password_field :password, class:"form-control  mb-2", autocomplete: "new-password" %>
+      <% if @minimum_password_length %>
+      <div class="form-text text-light mb-2">Минимум (<%= @minimum_password_length %> символов)</div>
+      <% end %>
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation, "Повторите пароль", class:"form-label" %><br />
+      <%= f.label :password_confirmation, "Повторите пароль", class:"form-label fw-bold" %><br />
       <%= f.password_field :password_confirmation, class:"form-control mb-2", autocomplete: "new-password" %>
     </div>
 
     <div class="actions">
-      <%= f.submit "Зарегистрироваться", class:" my-4 btn btn-outline-warning" %>
+      <%= f.submit "Зарегистрироваться", class:" my-4 btn btn-outline-warning fw-bold" %>
     </div>
   <% end %>
 

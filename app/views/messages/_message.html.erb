@@ -3,7 +3,7 @@
     <div class="cont-<%= message.user.id %>">
       <div class="card message-fit rounded-4 message-box msg-<%= message.user.id %>">
         <div class="card-body author d-flex justify-content-evenly">
-          <h6 class="card-title"><%= message.user.name %></h6>
+          <h6 class="card-title fw-bold"><%= message.user.name %></h6>
           <p class="badge rounded-pill bg-dark"><%= message.created_at.strftime("%H:%M") %></p>
         </div>
         <p class="card-text mx-2 mb-2"><%= message.content %></p>
