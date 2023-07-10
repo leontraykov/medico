@@ -26,6 +26,7 @@
     yarn install
 
 Сборка стилей:
+
     yarn build:css
     yarn build:js
 
