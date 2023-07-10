@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 class MessagesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_chat_room
 
   def create
-    # @message = @chat_room.messages.new(message_params)
-    # @message.user = current_user
     @message = current_user.messages.create(content: message_params[:content], chat_room_id: params[:chat_room_id])
 
     if @message.save
@@ -13,8 +13,10 @@ class MessagesController < ApplicationController
         format.html { redirect_to @chat_room }
       end
     else
-      format.turbo_stream { render turbo_stream: turbo_stream.replace(@message, partial: "messages/form", locals: { message: @message }) }
-      format.html { render "chat_rooms/show" }
+      format.turbo_stream do
+        render turbo_stream: turbo_stream.replace(@message, partial: 'messages/form', locals: { message: @message })
+      end
+      format.html { render 'chat_rooms/show' }
     end
   end
 
