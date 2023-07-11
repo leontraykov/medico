@@ -9,6 +9,7 @@
 
     <div class="mb-3">
       <%= form.label :user_ids, "Выберете собеседников:", class: "form-label" %>
+      <div class="form-text text-light mb-2">Используйте Ctrl и мышь для множественного выбора</div>
       <%= form.collection_select :user_ids, @users, :id, :name, {}, { multiple: true, class: "form-select", data: { controller: "select-users", target: "select-users.select", action: "change->select-users#updateChosen" } } %>
       <div data-select-users-target="chosen" class="mt-3"></div>
     </div>
