@@ -136,6 +136,7 @@ h6 {
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+  border: 1px solid white;
 }
 
 .back-to-top i {
@@ -145,8 +146,12 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #5ec6ca;
-  color: #fff;
+  background: #fff;
+  color: #5ec6ca;
+  border: 1px solid #3fbbc0;
+  i {
+    color: #3fbbc0;
+  }
 }
 
 .back-to-top.active {
