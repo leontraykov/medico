@@ -26,7 +26,7 @@ default: &default
 
 development:
   <<: *default
-  database: chat1_development
+  database: medico_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: chat1_test
+  database: medico_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: chat1_production
-  username: chat1
-  password: <%= ENV["CHAT1_DATABASE_PASSWORD"] %>
+  database: medico_production
+  username: medico
+  password: <%= ENV["MEDICO_DATABASE_PASSWORD"] %>

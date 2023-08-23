@@ -8,6 +8,8 @@ set :repo_url, "git@github.com:leontraykov/medico.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :branch, 'main'
 
+set :rbenv_type, :user
+set :rbenv_ruby, '3.2.2'
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 
