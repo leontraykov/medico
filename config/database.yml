@@ -86,4 +86,4 @@ production:
   <<: *default
   database: medico_production
   username: medico
-  password: <%= ENV["MEDICO_DATABASE_PASSWORD"] %>
+  password: medicopostgres
