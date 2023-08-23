@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Medico</title>
+    <title>Medicio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <%= favicon_link_tag asset_path('fav.png') %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
@@ -26,6 +28,9 @@
   </head>
 
   <body class="">
+    <%= render "layouts/top_bar" %>
+    <%= render "layouts/header" %>
     <%= yield %>
+    <%= render "layouts/footer" %>
   </body>
 </html>
