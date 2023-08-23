@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_06_194221) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_22_153505) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "vector"
 
   create_table "chat_room_users", force: :cascade do |t|
     t.bigint "chat_room_id", null: false

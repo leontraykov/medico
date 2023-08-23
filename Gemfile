@@ -33,3 +33,9 @@ group :development do
   gem 'rubocop', require: false
   gem 'web-console'
 end
+
+gem "font-awesome-sass", "~> 6.4"
+
+gem "neighbor", "~> 0.3.0"
+
+gem "ruby-openai", "~> 5.1"

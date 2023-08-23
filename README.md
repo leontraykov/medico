@@ -1,42 +1,17 @@
-# README
+Digital Receptionist for Clinics 🩺💻
 
-ЧатЧат
+Welcome to our digital front desk — a seamless platform designed to elevate patient experience and streamline clinic operations.
+Key Features
 
-Это приложение - чат, где пользователи могут создавать комнаты и обмениваться сообщениями в реальном времени. Это проект был разработан с использованием следующих технологий:
+    🤖 Digital Assistant: A user-friendly guide assisting patients in navigation and providing answers to common queries.
+    📅 Online Appointments: Efficient booking system, negating the need to make phone calls.
+    📂 Electronic Patient Record: All medical information securely stored and easily accessible.
+    🌐 Integration Capabilities: Compatibility with various medical systems and databases.
 
-    Ruby on Rails 7.0.5.1, PostgreSQL, Hotwire Turbo & Stimulus, Rspec, Devise, Bootstrap 5
+Technologies Used
 
-Функциональность
-
-    - Создание и вход в комнаты для общения.
-    - Обмен сообщениями в реальном времени.
-    - Автоматическое обновление списка пользователей, чат-комнат и сообщений при появлении новых.
-    - Очистка поля ввода после отправки сообщения.
-
-Установка и Запуск
-
-Сначала клонируйте репозиторий:
-
-    git clone https://github.com/leontraykov/chat.git
-    cd chat
-
-Установите зависимости:
-
-    bundle install
-    yarn install
-
-Сборка стилей:
-
-    yarn build:css
-    yarn build:js
-
-Создайте базу данных и выполните миграции:
-
-    rails db:create
-    rails db:migrate
-
-Запустите сервер:
-
-    rails s
-
-Теперь вы можете открыть приложение в браузере по адресу http://localhost:3000.
+    Ruby on Rails 7: The go-to framework for modern web applications.
+    Hotwire (Turbo & Stimulus): For swift navigation and dynamic page components without reloading.
+    Bootstrap 5: Ensuring a responsive and contemporary design.
+    ... and more.
+    
