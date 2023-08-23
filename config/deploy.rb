@@ -31,6 +31,7 @@ append :linked_files, "config/credentials.yml.enc", "config/master.key"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
+set :default_env, { path: "/home/deploy/.nvm/versions/node/v14.21.3/bin:$PATH" }
 
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
