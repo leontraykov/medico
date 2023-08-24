@@ -3,8 +3,8 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>About Us</h2>
-      <p>At our healthcare facility, we are committed to delivering world-class care and medical expertise. With a dedicated team of professionals and advanced medical equipment, we strive to provide personalized care tailored to each patient's needs.</p>
+      <h2><%= t("about.heading") %></h2>
+      <p><%= t("about.description") %></p>
     </div>
 
     <div class="row">
@@ -12,20 +12,21 @@
         <%= image_tag "about.jpg", class:"img-fluid" %>
       </div>
       <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-        <h3>Dedicated to Excellence in Healthcare</h3>
+        <h3><%= t("about.subheading") %></h3>
         <p class="fst-italic">
-          Our journey began with a simple mission: to heal and care. Over the years, we have expanded our services, incorporated advanced technologies, and built a reputation for reliability and trust.
+          <%= t("about.journey_description") %>
         </p>
         <ul>
-          <li><i class="bi bi-check-circle"></i> A state-of-the-art facility ensuring top-tier medical care.</li>
-          <li><i class="bi bi-check-circle"></i> A team of dedicated professionals, always ready to serve.</li>
-          <li><i class="bi bi-check-circle"></i> Emphasis on patient-centered care, understanding individual needs and conditions for the best outcomes.</li>
+          <li><i class="bi bi-check-circle"></i> <%= t("about.facility_description") %></li>
+          <li><i class="bi bi-check-circle"></i> <%= t("about.team_description") %></li>
+          <li><i class="bi bi-check-circle"></i> <%= t("about.patient_care_description") %></li>
         </ul>
         <p>
-          Our commitment remains unwavering: to offer the highest standard of medical care, ensuring comfort, trust, and well-being for all our patients. Your health is our priority.
+          <%= t("about.commitment_description") %>
         </p>
       </div>
     </div>
 
   </div>
-</section><!-- End About Us Section -->
+</section>
+<!-- End About Us Section -->

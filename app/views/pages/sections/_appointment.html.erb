@@ -3,54 +3,56 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>Make an Appointment</h2>
-      <p>Our easy-to-use appointment system ensures you can access our renowned medical professionals at a time that's convenient for you. Start your journey to better health by booking an appointment today.</p>    </div>
+      <h2><%= t("appointment.heading") %></h2>
+      <p><%= t("appointment.description") %></p>
+    </div>
 
     <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
       <div class="row">
         <div class="col-md-4 form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          <input type="text" name="name" class="form-control" id="name" placeholder="<%= t("appointment.name_placeholder") %>" required>
         </div>
         <div class="col-md-4 form-group mt-3 mt-md-0">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          <input type="email" class="form-control" name="email" id="email" placeholder="<%= t("appointment.email_placeholder") %>" required>
         </div>
         <div class="col-md-4 form-group mt-3 mt-md-0">
-          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="<%= t("appointment.phone_placeholder") %>" required>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 form-group mt-3">
-          <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+          <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="<%= t("appointment.date_placeholder") %>" required>
         </div>
         <div class="col-md-4 form-group mt-3">
           <select name="department" id="department" class="form-select">
-            <option value="">Select Department</option>
-            <option value="Department 1">Cardiology</option>
-            <option value="Department 2">Neurology</option>
-            <option value="Department 3">Orthopedics</option>
+            <option value=""><%= t("appointment.select_department") %></option>
+            <option value="Department 1"><%= t("appointment.department_cardiology") %></option>
+            <option value="Department 2"><%= t("appointment.department_neurology") %></option>
+            <option value="Department 3"><%= t("appointment.department_orthopedics") %></option>
           </select>
         </div>
         <div class="col-md-4 form-group mt-3">
           <select name="doctor" id="doctor" class="form-select">
-            <option value="">Select Doctor</option>
-            <option value="Doctor 1">Doctor Walter White</option>
-            <option value="Doctor 2">Doctor Sarah Jhonson</option>
-            <option value="Doctor 3">Doctor William Anderson</option>
-            <option value="Doctor 3">Doctor Amanda Jepson</option>
+            <option value=""><%= t("appointment.select_doctor") %></option>
+            <option value="Doctor 1"><%= t("appointment.doctor_walter_white") %></option>
+            <option value="Doctor 2"><%= t("appointment.doctor_sarah_jhonson") %></option>
+            <option value="Doctor 3"><%= t("appointment.doctor_william_anderson") %></option>
+            <option value="Doctor 3"><%= t("appointment.doctor_amanda_jepson") %></option>
           </select>
         </div>
       </div>
 
       <div class="form-group mt-3">
-        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+        <textarea class="form-control" name="message" rows="5" placeholder="<%= t("appointment.message_placeholder") %>"></textarea>
       </div>
       <div class="my-3">
-        <div class="loading">Loading</div>
-        <div class="error-message"></div>
-        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+        <div class="loading"><%= t("appointment.loading") %></div>
+        <div class="error-message"><%= t("appointment.error_message") %></div>
+        <div class="sent-message"><%= t("appointment.sent_message") %></div>
       </div>
-      <div class="text-center"><button type="submit">Make an Appointment</button></div>
+      <div class="text-center"><button type="submit"><%= t("appointment.submit_button") %></button></div>
     </form>
 
   </div>
-</section><!-- End Appointment Section -->
+</section>
+<!-- End Appointment Section -->

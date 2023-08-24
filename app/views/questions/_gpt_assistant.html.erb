@@ -1,13 +1,13 @@
 <div class="row">
   <div class="section-title">
-    <h2>Digital Guide</h2>
-    <p>Chat Now with Our Virtual Assistant for Instant Help!</p>
+    <h2><%= t('digital_guide.title') %></h2>
+    <p><%= t('digital_guide.description') %></p>
   </div>
   <div class="d-fex justify-content-ceter">
     <div class="col-lg-8 mx-lg-auto blue-border rounded px-4 pb-4 pt-5 ">
-      <div class="rounded chat-container pt-4 px-4">
+      <div class="rounded chat-container py-4 px-4">
         <%= turbo_frame_tag "answer", class:"chat-text fw-bold" do %>
-          Hi! I'm here to answer your questions!
+          <%= t('digital_guide.chat_greeting') %>
         <% end %>
       </div>
       <%= turbo_frame_tag "new_question", target: "_top" do %>
@@ -17,7 +17,7 @@
                 id="chat-input"
                 class="form-control chat-input"
                 name="question[question]"
-                placeholder="Type your question">
+                placeholder="<%= t('digital_guide.input_placeholder') %>">
           <!-- Круглая кнопка с иконкой бумажного самолетика -->
           <button type="submit" class="btn-send mx-3">
             <i class="fa-solid fa-paper-plane fa-2xl"></i>

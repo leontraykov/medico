@@ -3,8 +3,8 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>Departments</h2>
-      <p>We offer a wide range of medical services across various specialized departments. Our team of professionals is dedicated to providing personalized care to all patients.</p>
+      <h2><%= t("departments.title") %></h2>
+      <p><%= t("departments.description") %></p>
     </div>
 
     <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -12,26 +12,26 @@
         <ul class="nav nav-tabs flex-column">
           <li class="nav-item">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <h4>Cardiology</h4>
-              <p>Expert care for heart and vascular conditions.</p>
+              <h4><%= t("departments.tab.cardiology.title") %></h4>
+              <p><%= t("departments.tab.cardiology.description") %></p>
             </a>
           </li>
           <li class="nav-item mt-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>Neurology</h4>
-              <p>Advanced treatments for brain and nervous system disorders.</p>
+              <h4><%= t("departments.tab.neurology.title") %></h4>
+              <p><%= t("departments.tab.neurology.description") %></p>
             </a>
           </li>
           <li class="nav-item mt-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Hepatology</h4>
-              <p>Comprehensive care for liver, gallbladder, biliary tree, and pancreas diseases.</p>
+              <h4><%= t("departments.tab.hepatology.title") %></h4>
+              <p><%= t("departments.tab.hepatology.description") %></p>
             </a>
           </li>
           <li class="nav-item mt-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <h4>Pediatrics</h4>
-              <p>Dedicated to children's health from infancy through adolescence.</p>
+              <h4><%= t("departments.tab.pediatrics.title") %></h4>
+              <p><%= t("departments.tab.pediatrics.description") %></p>
             </a>
           </li>
         </ul>
@@ -39,28 +39,28 @@
       <div class="col-lg-8">
         <div class="tab-content">
           <div class="tab-pane active show" id="tab-1">
-            <h3>Cardiology</h3>
-            <p class="fst-italic">Where heart health is a matter of the heart.</p>
+            <h3><%= t("departments.tab.cardiology.header") %></h3>
+            <p class="fst-italic"><%= t("departments.tab.cardiology.subtitle") %></p>
             <%= image_tag "departments-1.jpg", class:"img-fluid" %>
-            <p>From preventive heart care to complex interventions and surgery, our Cardiology Department stands at the forefront of heart care. Our state-of-the-art facilities are complemented by a team of compassionate specialists dedicated to the well-being of our patients.</p>
+            <p><%= t("departments.tab.cardiology.content") %></p>
           </div>
           <div class="tab-pane" id="tab-2">
-            <h3>Neurology</h3>
-            <p class="fst-italic">Navigating the complexities of the brain, with care.</p>
+            <h3><%= t("departments.tab.neurology.header") %></h3>
+            <p class="fst-italic"><%= t("departments.tab.neurology.subtitle") %></p>
             <%= image_tag "departments-2.jpg", class:"img-fluid" %>
-            <p>Our Neurology Department provides specialized care for a wide range of neurological disorders. Whether it's migraines, epilepsy, or more complex neurological conditions, we're equipped to provide the best possible outcomes.</p>
+            <p><%= t("departments.tab.neurology.content") %></p>
           </div>
           <div class="tab-pane" id="tab-3">
-            <h3>Hepatology</h3>
-            <p class="fst-italic">Dedicated to your liver's health and beyond.</p>
+            <h3><%= t("departments.tab.hepatology.header") %></h3>
+            <p class="fst-italic"><%= t("departments.tab.hepatology.subtitle") %></p>
             <%= image_tag "departments-3.jpg", class:"img-fluid" %>
-            <p>Our Hepatology Department focuses on the prevention, diagnosis, and management of diseases of the liver, gallbladder, and pancreas. We're committed to improving liver health through patient care, research, and education.</p>
+            <p><%= t("departments.tab.hepatology.content") %></p>
           </div>
           <div class="tab-pane" id="tab-4">
-            <h3>Pediatrics</h3>
-            <p class="fst-italic">Your child's health, our greatest mission.</p>
+            <h3><%= t("departments.tab.pediatrics.header") %></h3>
+            <p class="fst-italic"><%= t("departments.tab.pediatrics.subtitle") %></p>
             <%= image_tag "departments-4.jpg", class:"img-fluid" %>
-            <p>We understand the unique needs of children and are dedicated to their holistic care. Our Pediatric Department boasts a multidisciplinary team that works together to offer comprehensive care to our young patients.</p>
+            <p><%= t("departments.tab.pediatrics.content") %></p>
           </div>
         </div>
       </div>

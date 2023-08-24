@@ -1,33 +1,82 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  about:
+    heading: "About Us"
+    description: "At our healthcare facility, we are committed to delivering world-class care and medical expertise. With a dedicated team of professionals and advanced medical equipment, we strive to provide personalized care tailored to each patient's needs."
+    subheading: "Dedicated to Excellence in Healthcare"
+    journey_description: "Our journey began with a simple mission: to heal and care. Over the years, we have expanded our services, incorporated advanced technologies, and built a reputation for reliability and trust."
+    facility_description: "A state-of-the-art facility ensuring top-tier medical care."
+    team_description: "A team of dedicated professionals, always ready to serve."
+    patient_care_description: "Emphasis on patient-centered care, understanding individual needs and conditions for the best outcomes."
+    commitment_description: "Our commitment remains unwavering: to offer the highest standard of medical care, ensuring comfort, trust, and well-being for all our patients. Your health is our priority."
+  appointment:
+    heading: "Make an Appointment"
+    description: "Our easy-to-use appointment system ensures you can access our renowned medical professionals at a time that's convenient for you. Start your journey to better health by booking an appointment today."
+    name_placeholder: "Your Name"
+    email_placeholder: "Your Email"
+    phone_placeholder: "Your Phone"
+    date_placeholder: "Appointment Date"
+    select_department: "Select Department"
+    department_cardiology: "Cardiology"
+    department_neurology: "Neurology"
+    department_orthopedics: "Orthopedics"
+    select_doctor: "Select Doctor"
+    doctor_walter_white: "Doctor Walter White"
+    doctor_sarah_jhonson: "Doctor Sarah Jhonson"
+    doctor_william_anderson: "Doctor William Anderson"
+    doctor_amanda_jepson: "Doctor Amanda Jepson"
+    message_placeholder: "Message (Optional)"
+    loading: "Loading"
+    error_message: "Error Message" # I'm guessing the content here, as the exact message wasn't provided.
+    sent_message: "Your appointment request has been sent successfully. Thank you!"
+    submit_button: "Make an Appointment"
+  contact:
+    title: "Contact"
+    description: "If you have any questions, concerns, or just want to say hello, don't hesitate to get in touch with us. Our team is always here to help and assist you. Reach out to us today and let's start a conversation!"
+    address_heading: "Our Address"
+    address: "A108 Adam Street, New York, NY 535022"
+    email_heading: "Email Us"
+    email_1: "info@example.com"
+    email_2: "contact@example.com"
+    call_heading: "Call Us"
+    phone_1: "+1 5589 55488 55"
+    phone_2: "+1 6678 254445 41"
+    name_placeholder: "Your Name"
+    email_placeholder: "Your Email"
+    subject_placeholder: "Subject"
+    message_placeholder: "Message"
+    loading: "Loading"
+    sent_message: "Your message has been sent. Thank you!"
+    send_button: "Send Message"
+  departments:
+    title: "Departments"
+    description: "We offer a wide range of medical services across various specialized departments. Our team of professionals is dedicated to providing personalized care to all patients."
+    tab:
+      cardiology:
+        title: "Cardiology"
+        description: "Expert care for heart and vascular conditions."
+        header: "Cardiology"
+        subtitle: "Where heart health is a matter of the heart."
+        content: "From preventive heart care to complex interventions and surgery, our Cardiology Department stands at the forefront of heart care. Our state-of-the-art facilities are complemented by a team of compassionate specialists dedicated to the well-being of our patients."
+      neurology:
+        title: "Neurology"
+        description: "Advanced treatments for brain and nervous system disorders."
+        header: "Neurology"
+        subtitle: "Navigating the complexities of the brain, with care."
+        content: "Our Neurology Department provides specialized care for a wide range of neurological disorders. Whether it's migraines, epilepsy, or more complex neurological conditions, we're equipped to provide the best possible outcomes."
+      hepatology:
+        title: "Hepatology"
+        description: "Comprehensive care for liver, gallbladder, biliary tree, and pancreas diseases."
+        header: "Hepatology"
+        subtitle: "Dedicated to your liver's health and beyond."
+        content: "Our Hepatology Department focuses on the prevention, diagnosis, and management of diseases of the liver, gallbladder, and pancreas. We're committed to improving liver health through patient care, research, and education."
+      pediatrics:
+        title: "Pediatrics"
+        description: "Dedicated to children's health from infancy through adolescence."
+        header: "Pediatrics"
+        subtitle: "Your child's health, our greatest mission."
+        content: "We understand the unique needs of children and are dedicated to their holistic care. Our Pediatric Department boasts a multidisciplinary team that works together to offer comprehensive care to our young patients."
+  digital_guide:
+    title: "Digital Guide"
+    description: "Chat Now with Our Virtual Assistant for Instant Help!"
+    chat_greeting: "Hi! I'm here to answer your questions!"
+    input_placeholder: "Type your question"
