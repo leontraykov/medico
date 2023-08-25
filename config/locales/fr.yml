@@ -1,4 +1,21 @@
 fr:
+  en: "Anglais"
+  fr: "Français"
+  es: "Espagnol"
+  ru: "Russe"
+  top_bar:
+    working_hours: "Lundi - Samedi, 8h à 22h"
+    call_us_now: "Appelez-nous maintenant +1 5589 55488 55"
+  header:
+    navigation:
+      home: "Accueil"
+      chat_bot: "Chat-bot"
+      about: "À propos"
+      services: "Services"
+      departments: "Départements"
+      doctors: "Médecins"
+      contact: "Contact"
+    appointment_btn: "Prendre un rendez-vous"
   about:
     heading: "À propos de nous"
     description: "Dans notre établissement de santé, nous nous engageons à fournir des soins et une expertise médicale de classe mondiale. Avec une équipe dédiée de professionnels et un équipement médical avancé, nous nous efforçons de fournir des soins personnalisés adaptés aux besoins de chaque patient."
@@ -80,3 +97,160 @@ fr:
     description: "Chattez maintenant avec notre assistant virtuel pour obtenir de l'aide instantanément!"
     chat_greeting: "Salut! Je suis ici pour répondre à vos questions!"
     input_placeholder: "Tapez votre question"
+  doctors:
+    title: "Médecins"
+    description: "Notre équipe de professionnels médicaux est dédiée à fournir d'excellents soins et traitements. Avec des années d'expérience et une formation spécialisée, chacun de nos médecins s'engage à garantir les meilleurs résultats pour nos patients."
+    doctor1:
+      name: "Walter White"
+      speciality: "Directeur Médical en Chef"
+    doctor2:
+      name: "Sarah Jhonson"
+      speciality: "Anesthésiste"
+    doctor3:
+      name: "William Anderson"
+      speciality: "Cardiologie"
+    doctor4:
+      name: "Amanda Jepson"
+      speciality: "Neurochirurgien"
+  emergency:
+    title: "En cas d'urgence ? Besoin d'aide maintenant ?"
+    description: "Notre équipe est disponible 24h/24, garantissant que les soins urgents sont toujours à votre portée. Votre santé et votre bien-être sont nos principales priorités."
+    button_text: "Prendre un rendez-vous"
+  hero:
+    slide1:
+      title: "Bienvenue chez Medicio"
+      description: "Votre santé est notre priorité absolue. Découvrez des solutions de soins complètes adaptées à vos besoins individuels."
+      button_text: "En savoir plus"
+    slide2:
+      title: "Solutions de santé avancées"
+      description: "Découvrez la combinaison de la technologie de pointe avec une touche humaine. Assurer votre bien-être à chaque étape."
+      button_text: "Nos services"
+    slide3:
+      title: "Engagé envers votre bien-être"
+      description: "Des soins préventifs aux traitements spécialisés, notre équipe dévouée est là pour vous guider vers une santé optimale."
+      button_text: "Rencontrez notre équipe"
+  faq:
+    title: "Questions Fréquemment Posées"
+    subtitle: "Vous avez des questions? Nous avons les réponses. Plongez dans nos questions les plus fréquemment posées ci-dessous. Si vous ne trouvez pas ce que vous cherchez, n'hésitez pas à nous contacter directement."
+    q1:
+      question: "Quels modes de paiement acceptez-vous?"
+      answer: "Nous acceptons la plupart des principales cartes de crédit, PayPal et les virements bancaires. Pour plus d'informations, veuillez consulter notre section Méthodes de Paiement."
+    q2:
+      question: "Offrez-vous des réductions pour les abonnements annuels?"
+      answer: "Oui, nous offrons des économies importantes pour les clients qui choisissent nos plans annuels. Consultez notre page Tarifs pour plus de détails ou contactez notre équipe de vente."
+    q3:
+      question: "Y a-t-il une période d'essai pour vos services?"
+      answer: "Nous offrons une période d'essai de 14 jours pour les nouveaux utilisateurs. Pendant cette période, vous pouvez accéder à toutes les fonctionnalités et décider si notre service répond à vos besoins."
+    q4:
+      question: "Comment garantissez-vous la sécurité de mes données?"
+      answer: "La sécurité des données est notre priorité absolue. Nous utilisons des méthodes de cryptage avancées et nous conformons aux réglementations internationales sur la protection des données pour garantir que vos données restent privées et sécurisées."
+    q5:
+      question: "Puis-je annuler mon abonnement à tout moment?"
+      answer: "Oui, vous pouvez annuler votre abonnement à tout moment. Cependant, notez que les remboursements sont basés sur notre politique de remboursement, qui peut être trouvée dans nos Conditions d'utilisation."
+    q6:
+      question: "Fournissez-vous un support client pour les problèmes techniques?"
+      answer: "Absolument! Nous avons une équipe de support dédiée prête à aider pour toute question technique ou liée au compte. Vous pouvez nous contacter par email, chat en direct ou notre forum de support."
+  featured_services:
+    cardiology:
+      title: "Cardiologie"
+      description: "Notre équipe dédiée offre des soins cardiaques complets, garantissant une santé cardiovasculaire optimale."
+    pharmacy:
+      title: "Pharmacie"
+      description: "Un large éventail de médicaments, suppléments et solutions de santé, sélectionnés pour votre bien-être."
+    diagnostics:
+      title: "Diagnostics"
+      description: "Des outils et services diagnostiques avancés pour identifier et traiter rapidement les éventuels problèmes de santé."
+    genetics:
+      title: "Génétique"
+      description: "Des informations et des conseils de santé personnalisés basés sur votre composition génétique unique."
+  features:
+    electronic_health_records:
+      title: "Dossiers de santé électroniques"
+      description: "Nos dossiers de santé électroniques complets garantissent une prise en charge fluide du patient, stockant toutes les informations essentielles en toute sécurité."
+    advanced_medical_equipment:
+      title: "Équipement médical avancé"
+      description: "Nous investissons dans les dernières technologies médicales pour fournir des diagnostics précis et des traitements efficaces."
+    medical_screaning_services:
+      title: "Services d'imagerie médicale"
+      description: "Des IRM aux radiographies, nos services d'imagerie avancés aident à des diagnostics et traitements précis."
+    patient_safety_first:
+      title: "La sécurité du patient avant tout"
+      description: "Notre priorité absolue est la sécurité et le bien-être de nos patients. Nous maintenons des normes rigoureuses pour assurer cela."
+  gallery:
+    title: "Galerie"
+    description: "Découvrez nos installations de pointe, notre équipe médicale dévouée et nos moments de fierté à travers notre galerie de photos. Chaque image raconte une histoire d'engagement, de soin et d'excellence dans la prestation de soins de santé."
+  services:
+    section_title:
+      title: "Services"
+      description: "Notre hôpital propose une large gamme de services médicaux, en utilisant la technologie la plus récente pour fournir des soins et des traitements de premier ordre. Nous sommes fiers de fournir des soins centrés sur le patient avec compassion et précision."
+    cardiology:
+      title: "Cardiologie"
+      description: "Traitements et diagnostics spécialisés pour les problèmes cardiaques pour garantir que votre cœur reste en rythme parfait."
+    pharmacy:
+      title: "Pharmacie"
+      description: "Accès à des médicaments de qualité et des conseils pharmaceutiques pour aider à votre prompt rétablissement."
+    patient_care:
+      title: "Soins aux patients"
+      description: "Engagé à fournir des services de soins exceptionnels à nos patients, garantissant leur confort tout au long du processus de guérison."
+    genetics:
+      title: "Génétique"
+      description: "Tests génétiques et conseils de pointe pour les affections héréditaires et les risques potentiels."
+    physiotherapy:
+      title: "Physiothérapie"
+      description: "Services de rééducation pour aider les patients à retrouver la mobilité et la fonction et à vivre sans douleur."
+    medical_records:
+      title: "Dossiers médicaux"
+      description: "Maintien d'antécédents médicaux complets et sécurisés pour garantir des traitements efficaces et opportuns."
+  testimonials:
+    section_title:
+      title: "Témoignages"
+      description: "Voici ce que nos clients satisfaits disent de nous:"
+    testimonial_1:
+      text: "Travailler avec cette équipe a été une expérience transformatrice. Leur engagement envers l'excellence et le professionnalisme a propulsé notre projet à des sommets inégalés."
+      name: "Saul Goodman"
+      position: "PDG & Fondateur"
+    testimonial_2:
+      text: "La créativité et l'expertise technique qu'ils ont apportées à notre projet étaient incomparables. Vraiment un tournant pour nous!"
+      name: "Sara Wilsson"
+      position: "Designer"
+    testimonial_3:
+      text: "Leur support client est louable. Ils étaient là pour nous à chaque étape, garantissant que le processus soit fluide."
+      name: "Jena Karlis"
+      position: "Propriétaire du magasin"
+    testimonial_4:
+      text: "Une équipe remarquable qui ne se contente pas de livrer, mais ajoute de la valeur à votre projet grâce à leurs connaissances et leur expertise."
+      name: "Matt Brandon"
+      position: "Freelance"
+    testimonial_5:
+      text: "Si vous recherchez des professionnels dévoués qui peuvent élever votre vision, ne cherchez pas plus loin. Hautement recommandé!"
+      name: "John Larson"
+      position: "Entrepreneur"
+  footer:
+    footer_info:
+      address: 
+        line1: "123 Rue de la Santé"
+        line2: "Ville de Bien-être, HC 12345"
+      contact:
+        phone_label: "Téléphone :"
+        phone: "+1 1234 5678 90"
+        email_label: "Courriel :"
+        email: "support@medicio.com"
+    quick_links:
+      title: "Liens Rapides"
+      home: "Accueil"
+      mission: "Notre Mission"
+      health_services: "Services de Santé"
+      feedback: "Retours des Patients"
+      privacy: "Confidentialité et Politique"
+    offerings:
+      title: "Nos Offres"
+      general_consultation: "Consultation Générale"
+      surgeries: "Chirurgies Médicales"
+      dental_care: "Soins Dentaires"
+      vision: "Soins des Yeux"
+      child_care: "Soins Pédiatriques"
+    newsletter:
+      title: "Restez à Jour"
+      description: "Abonnez-vous à notre newsletter pour recevoir les dernières mises à jour sur la santé, les nouvelles et les offres spéciales directement dans votre boîte de réception."
+      email_placeholder: "Entrez votre courriel"
+      subscribe: "S'abonner"

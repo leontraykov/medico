@@ -1,4 +1,21 @@
 es:
+  en: "Inglés"
+  fr: "Francés"
+  es: "Español"
+  ru: "Ruso"
+  top_bar:
+    working_hours: "Lunes - Sábado, 8AM a 10PM"
+    call_us_now: "Llámanos ahora +1 5589 55488 55"
+  header:
+    navigation:
+      home: "Inicio"
+      chat_bot: "Chat-bot"
+      about: "Acerca de"
+      services: "Servicios"
+      departments: "Departamentos"
+      doctors: "Doctores"
+      contact: "Contacto"
+    appointment_btn: "Solicitar una cita"
   about:
     heading: "Acerca de nosotros"
     description: "En nuestra instalación de atención médica, estamos comprometidos a brindar atención y experiencia médica de clase mundial. Con un equipo dedicado de profesionales y equipo médico avanzado, nos esforzamos por brindar atención personalizada adaptada a las necesidades de cada paciente."
@@ -80,3 +97,206 @@ es:
     description: "¡Chatea ahora con nuestro asistente virtual para obtener ayuda al instante!"
     chat_greeting: "¡Hola! ¡Estoy aquí para responder tus preguntas!"
     input_placeholder: "Escribe tu pregunta"
+  doctors:
+    title: "Médicos"
+    description: "Nuestro equipo de profesionales médicos está dedicado a proporcionar una excelente atención y tratamiento. Con años de experiencia y formación especializada, cada uno de nuestros médicos está comprometido a garantizar los mejores resultados para nuestros pacientes."
+    doctor1:
+      name: "Walter White"
+      speciality: "Director Médico Jefe"
+    doctor2:
+      name: "Sarah Jhonson"
+      speciality: "Anestesióloga"
+    doctor3:
+      name: "William Anderson"
+      speciality: "Cardiología"
+    doctor4:
+      name: "Amanda Jepson"
+      speciality: "Neurocirujano"
+      es:
+  emergency:
+    title: "¿En una emergencia? ¿Necesitas ayuda ahora?"
+    description: "Nuestro equipo está disponible las 24 horas, asegurando que la atención urgente siempre esté a su alcance. Su salud y bienestar son nuestra máxima prioridad."
+    button_text: "Hacer una cita"
+  hero:
+    slide1:
+      title: "Bienvenido a Medicio"
+      description: "Tu salud es nuestra máxima prioridad. Descubre soluciones de atención integral adaptadas a tus necesidades individuales."
+      button_text: "Descubrir más"
+    slide2:
+      title: "Soluciones avanzadas de salud"
+      description: "Experimente la combinación de tecnología de vanguardia con el toque humano. Asegurando su bienestar en cada paso."
+      button_text: "Nuestros servicios"
+    slide3:
+      title: "Comprometidos con tu bienestar"
+      description: "Desde la atención preventiva hasta tratamientos especializados, nuestro equipo dedicado está aquí para guiarte hacia una salud óptima."
+      button_text: "Conoce a nuestro equipo"
+  faq:
+    title: "Preguntas Frecuentes"
+    subtitle: "¿Tienes preguntas? Tenemos respuestas. Sumérgete en nuestras preguntas más frecuentes a continuación. Si no encuentras lo que buscas, no dudes en contactarnos directamente."
+    q1:
+      question: "¿Qué métodos de pago aceptan?"
+      answer: "Aceptamos la mayoría de las principales tarjetas de crédito, PayPal y transferencias bancarias. Para obtener más información detallada, consulte nuestra sección de Métodos de Pago."
+    q2:
+      question: "¿Ofrecen descuentos para suscripciones anuales?"
+      answer: "Sí, ofrecemos ahorros significativos para los clientes que eligen nuestros planes anuales. Consulte nuestra página de Precios para obtener más detalles o póngase en contacto con nuestro equipo de ventas."
+    q3:
+      question: "¿Hay un período de prueba para sus servicios?"
+      answer: "Ofrecemos un período de prueba de 14 días para nuevos usuarios. Durante este período, puede acceder a todas las funciones y decidir si nuestro servicio se adapta a sus necesidades."
+    q4:
+      question: "¿Cómo garantizan la seguridad de mis datos?"
+      answer: "La seguridad de los datos es nuestra máxima prioridad. Empleamos métodos de cifrado avanzados y cumplimos con las regulaciones internacionales de protección de datos para garantizar que sus datos permanezcan privados y seguros."
+    q5:
+      question: "¿Puedo cancelar mi suscripción en cualquier momento?"
+      answer: "Sí, puede cancelar su suscripción en cualquier momento. Sin embargo, tenga en cuenta que los reembolsos se basan en nuestra política de reembolso, que se puede encontrar en nuestros Términos de Servicio."
+    q6:
+      question: "¿Proporcionan soporte al cliente para problemas técnicos?"
+      answer: "¡Absolutamente! Tenemos un equipo de soporte dedicado listo para ayudar con cualquier consulta técnica o relacionada con la cuenta. Puede comunicarse con nosotros por correo electrónico, chat en vivo o nuestro foro de soporte."
+  featured_services:
+    cardiology:
+      title: "Cardiología"
+      description: "Nuestro equipo dedicado proporciona cuidado cardíaco integral, garantizando una salud cardiovascular óptima."
+    pharmacy:
+      title: "Farmacia"
+      description: "Una amplia gama de medicamentos, suplementos y soluciones de salud, seleccionados para su bienestar."
+    diagnostics:
+      title: "Diagnósticos"
+      description: "Herramientas y servicios diagnósticos avanzados para identificar y abordar preocupaciones de salud potenciales desde temprano."
+    genetics:
+      title: "Genética"
+      description: "Información de salud personalizada y asesoramiento basado en su composición genética única."
+  features:
+    electronic_health_records:
+      title: "Registros Electrónicos de Salud"
+      description: "Nuestros completos registros electrónicos de salud garantizan una atención al paciente fluida, almacenando toda la información esencial de forma segura."
+    advanced_medical_equipment:
+      title: "Equipo Médico Avanzado"
+      description: "Invertimos en la última tecnología médica para proporcionar diagnósticos precisos y tratamientos efectivos."
+    medical_screaning_services:
+      title: "Servicios de Imagen Médica"
+      description: "Desde resonancias magnéticas hasta rayos X, nuestros servicios de imagen avanzados ayudan en diagnósticos y tratamientos precisos."
+    patient_safety_first:
+      title: "La Seguridad del Paciente es Primordial"
+      description: "Nuestra máxima prioridad es la seguridad y el bienestar de nuestros pacientes. Mantenemos estándares estrictos para asegurar esto."
+  gallery:
+    title: "Galería"
+    description: "Explore nuestras instalaciones de vanguardia, equipo médico dedicado y momentos de orgullo a través de nuestra galería de fotos. Cada imagen cuenta una historia de compromiso, cuidado y excelencia en la prestación de atención médica."
+  pricing:
+    section_title:
+      title: "Precios"
+      description: "Elige un plan de salud adecuado para ti y tus seres queridos. Ofrecemos una gama de paquetes adaptados a diferentes necesidades. Calidad sin compromisos, precios justos."
+    beginner:
+      title: "Principiante"
+      price: "0"
+      features:
+        0: "Chequeo de salud inicial"
+        1: "Soporte en línea 24/7"
+        2: "Acceso a seminarios web de salud"
+        3: "Soporte premium"
+        4: "Consultas especializadas"
+      button: "Comenzar"
+    pro_health:
+      title: "Salud Pro"
+      price: "19"
+      features:
+        0: "Todo en Principiante"
+        1: "2 visitas médicas gratuitas"
+        2: "Boletín de salud mensual"
+        3: "Eventos de salud especiales"
+        4: "Consultas especializadas"
+      button: "Obtener Pro"
+    health_elite:
+      title: "Salud Élite"
+      price: "29"
+      features:
+        0: "Todo en Salud Pro"
+        1: "Visitas médicas ilimitadas"
+        2: "Acceso a todos los eventos de salud"
+        3: "Soporte prioritario"
+        4: "1 consulta especializada gratuita"
+      button: "Ir a Élite"
+    ultimate_health:
+      tag: "Cumbre"
+      title: "Salud Última"
+      price: "49"
+      features:
+        0: "Todo en Salud Élite"
+        1: "Administrador personal de salud"
+        2: "Planes de dieta y ejercicio"
+        3: "Talleres de salud gratuitos"
+        4: "Consultas especializadas ilimitadas"
+      button: "Alcanzar Último"
+  services:
+    section_title:
+      title: "Servicios"
+      description: "Nuestro hospital ofrece una amplia gama de servicios médicos, aprovechando la última tecnología para proporcionar atención y tratamiento de primera clase. Nos enorgullecemos de brindar atención centrada en el paciente con compasión y precisión."
+    cardiology:
+      title: "Cardiología"
+      description: "Tratamientos y diagnósticos especializados para problemas relacionados con el corazón para garantizar que su corazón permanezca en perfecto ritmo."
+    pharmacy:
+      title: "Farmacia"
+      description: "Acceso a medicamentos de calidad y orientación farmacéutica para ayudar en su rápida recuperación."
+    patient_care:
+      title: "Atención al paciente"
+      description: "Comprometidos con brindar servicios de atención excepcionales a nuestros pacientes, garantizando su comodidad durante todo el proceso de curación."
+    genetics:
+      title: "Genética"
+      description: "Pruebas genéticas y asesoramiento de vanguardia para condiciones hereditarias y riesgos potenciales."
+    physiotherapy:
+      title: "Fisioterapia"
+      description: "Servicios de rehabilitación para ayudar a los pacientes a recuperar la movilidad y la función y vivir sin dolor."
+    medical_records:
+      title: "Historiales médicos"
+      description: "Mantenimiento de historias médicas completas y seguras para garantizar tratamientos efectivos y oportunos."
+  testimonials:
+    section_title:
+      title: "Testimonios"
+      description: "Esto es lo que nuestros clientes satisfechos dicen de nosotros:"
+    testimonial_1:
+      text: "Trabajar con este equipo fue una experiencia transformadora. Su compromiso con la excelencia y profesionalismo llevó nuestro proyecto a grandes alturas."
+      name: "Saul Goodman"
+      position: "CEO & Fundador"
+    testimonial_2:
+      text: "La creatividad y experiencia técnica que aportaron a nuestro proyecto no tienen comparación. ¡Realmente fue un cambio de juego para nosotros!"
+      name: "Sara Wilsson"
+      position: "Diseñadora"
+    testimonial_3:
+      text: "Su soporte al cliente es admirable. Estuvieron con nosotros en cada paso, asegurando que el proceso fuera fluido."
+      name: "Jena Karlis"
+      position: "Dueña de tienda"
+    testimonial_4:
+      text: "Un equipo notable que no solo entrega, sino que agrega valor a tu proyecto con sus perspectivas y experiencia."
+      name: "Matt Brandon"
+      position: "Freelancer"
+    testimonial_5:
+      text: "Si buscas profesionales dedicados que puedan elevar tu visión, no busques más. ¡Altamente recomendado!"
+      name: "John Larson"
+      position: "Emprendedor"
+  footer:
+    footer_info:
+      address: 
+        line1: "123 Calle de la Salud"
+        line2: "Ciudad de Bienestar, HC 12345"
+      contact:
+        phone_label: "Teléfono:"
+        phone: "+1 1234 5678 90"
+        email_label: "Correo electrónico:"
+        email: "support@medicio.com"
+    quick_links:
+      title: "Enlaces Rápidos"
+      home: "Inicio"
+      mission: "Nuestra Misión"
+      health_services: "Servicios de Salud"
+      feedback: "Comentarios de los Pacientes"
+      privacy: "Privacidad y Política"
+    offerings:
+      title: "Nuestras Ofertas"
+      general_consultation: "Consulta General"
+      surgeries: "Cirugías Médicas"
+      dental_care: "Cuidado Dental"
+      vision: "Ojos y Visión"
+      child_care: "Cuidado Infantil"
+    newsletter:
+      title: "Manténgase Actualizado"
+      description: "Suscríbase a nuestro boletín y obtenga las últimas actualizaciones de salud, noticias y ofertas especiales directamente en su bandeja de entrada."
+      email_placeholder: "Ingrese su correo electrónico"
+      subscribe: "Suscribirse"

@@ -1,4 +1,21 @@
 en:
+  en: "English"
+  fr: "French"
+  es: "Spanish"
+  ru: "Russian"
+  top_bar:
+    working_hours: "Monday - Saturday, 8AM to 10PM"
+    call_us_now: "Call us now +1 5589 55488 55"
+  header:
+    navigation:
+      home: "Home"
+      chat_bot: "Chat-bot"
+      about: "About"
+      services: "Services"
+      departments: "Departments"
+      doctors: "Doctors"
+      contact: "Contact"
+    appointment_btn: "Make an Appointment"
   about:
     heading: "About Us"
     description: "At our healthcare facility, we are committed to delivering world-class care and medical expertise. With a dedicated team of professionals and advanced medical equipment, we strive to provide personalized care tailored to each patient's needs."
@@ -80,3 +97,206 @@ en:
     description: "Chat Now with Our Virtual Assistant for Instant Help!"
     chat_greeting: "Hi! I'm here to answer your questions!"
     input_placeholder: "Type your question"
+  doctors:
+    title: "Doctors"
+    description: "Our team of medical professionals is dedicated to providing excellent care and treatment. With years of experience and specialized training, each of our doctors is committed to ensuring the best outcomes for our patients."
+    doctor1:
+      name: "Walter White"
+      speciality: "Chief Medical Officer"
+    doctor2:
+      name: "Sarah Jhonson"
+      speciality: "Anesthesiologist"
+    doctor3:
+      name: "William Anderson"
+      speciality: "Cardiology"
+    doctor4:
+      name: "Amanda Jepson"
+      speciality: "Neurosurgeon"
+  emergency:
+    title: "In an emergency? Need help now?"
+    description: "Our team is available round the clock, ensuring that urgent care is always within your reach. Your health and well-being are our top priorities."
+    button_text: "Make an Make an Appointment"
+  hero:
+    slide1:
+      title: "Welcome to Medicio"
+      description: "Your health is our foremost priority. Discover comprehensive care solutions tailored to your individual needs."
+      button_text: "Discover More"
+    slide2:
+      title: "Advanced Healthcare Solutions"
+      description: "Experience the blend of state-of-the-art technology with human touch. Ensuring your well-being, every step of the way."
+      button_text: "Our Services"
+    slide3:
+      title: "Committed to Your Wellness"
+      description: "From preventive care to specialized treatments, our dedicated team is here to guide you towards optimal health."
+      button_text: "Meet Our Team"
+  faq:
+    title: "Frequently Asked Questions"
+    subtitle: "Have questions? We've got answers. Dive into our most commonly asked questions below. If you can't find what you're looking for, feel free to contact us directly."
+    q1:
+      question: "What payment methods do you accept?"
+      answer: "We accept most major credit cards, PayPal, and bank transfers. For more detailed information, please refer to our Payment Methods section."
+    q2:
+      question: "Do you offer any discounts for annual subscriptions?"
+      answer: "Yes, we offer significant savings for customers who choose our annual plans. Check our Pricing page for more details or get in touch with our Sales team."
+    q3:
+      question: "Is there a trial period for your services?"
+      answer: "We offer a 14-day trial period for new users. During this period, you can access all features and decide if our service fits your needs."
+    q4:
+      question: "How do you ensure the security of my data?"
+      answer: "Data security is our top priority. We employ advanced encryption methods and comply with international data protection regulations to ensure your data remains private and secure."
+    q5:
+      question: "Can I cancel my subscription at any time?"
+      answer: "Yes, you can cancel your subscription whenever you want. However, note that refunds are based on our refund policy, which can be found in our Terms of Service."
+    q6:
+      question: "Do you provide customer support for technical issues?"
+      answer: "Absolutely! We have a dedicated support team ready to help with any technical or account-related queries. You can reach out to us via email, live chat, or our support forum."
+  featured_services:
+    cardiology:
+      title: "Cardiology"
+      description: "Our dedicated team provides comprehensive heart care, ensuring optimal cardiovascular health."
+    pharmacy:
+      title: "Pharmacy"
+      description: "A wide range of medications, supplements, and health solutions, curated for your well-being."
+    diagnostics:
+      title: "Diagnostics"
+      description: "Advanced diagnostic tools and services to identify and address potential health concerns early."
+    genetics:
+      title: "Genetics"
+      description: "Personalized health insights and counseling based on your unique genetic makeup."
+  features:
+    electronic_health_records:
+      title: "Electronic Health Records"
+      description: "Our comprehensive electronic health records ensure seamless patient care, storing all essential information securely."
+    advanced_medical_equipment:
+      title: "Advanced Medical Equipment"
+      description: "We invest in the latest medical technology to provide accurate diagnoses and effective treatments."
+    medical_screaning_services:
+      title: "Medical Imaging Services"
+      description: "From MRIs to X-rays, our advanced imaging services help in precise diagnoses and treatments."
+    patient_safety_first:
+      title: "Patient Safety First"
+      description: "Our topmost priority is the safety and well-being of our patients. We maintain stringent standards to ensure this."
+  gallery:
+    title: "Gallery"
+    description: "Explore our state-of-the-art facilities, dedicated medical team, and moments of pride through our photo gallery. Every image tells a story of commitment, care, and excellence in healthcare delivery."
+  pricing:
+    section_title:
+      title: "Pricing"
+      description: "Choose a healthcare plan that's right for you and your loved ones. We offer a range of packages tailored to different needs. Uncompromised quality, fair prices."
+    beginner:
+      title: "Beginner"
+      price: "0"
+      features:
+        0: "Initial health checkup"
+        1: "24/7 online support"
+        2: "Access to health webinars"
+        3: "Premium support"
+        4: "Specialist consultations"
+      button: "Get Started"
+    pro_health:
+      title: "Pro Health"
+      price: "19"
+      features:
+        0: "Everything in Beginner"
+        1: "2 free doctor visits"
+        2: "Monthly health newsletter"
+        3: "Special health events"
+        4: "Specialist consultations"
+      button: "Get Pro"
+    health_elite:
+      title: "Health Elite"
+      price: "29"
+      features:
+        0: "Everything in Pro Health"
+        1: "Unlimited doctor visits"
+        2: "Access to all health events"
+        3: "Priority support"
+        4: "1 free specialist consultation"
+      button: "Go Elite"
+    ultimate_health:
+      tag: "Pinnacle"
+      title: "Ultimate Health"
+      price: "49"
+      features:
+        0: "Everything in Health Elite"
+        1: "Personal health manager"
+        2: "Diet and fitness plans"
+        3: "Free health workshops"
+        4: "Unlimited specialist consultations"
+      button: "Achieve Ultimate"
+  services:
+    section_title:
+      title: "Services"
+      description: "Our hospital offers a wide range of medical services, leveraging the latest technology to provide top-notch care and treatment. We pride ourselves on delivering patient-centric care with compassion and precision."
+    cardiology:
+      title: "Cardiology"
+      description: "Specialized treatments and diagnostics for heart-related issues to ensure your heart remains in perfect rhythm."
+    pharmacy:
+      title: "Pharmacy"
+      description: "Access to quality medicines and pharmaceutical guidance to assist in your speedy recovery."
+    patient_care:
+      title: "Patient Care"
+      description: "Committed to delivering exceptional care services to our patients, ensuring their comfort throughout the healing process."
+    genetics:
+      title: "Genetics"
+      description: "State-of-the-art genetic testing and counseling for inherited conditions and potential risks."
+    physiotherapy:
+      title: "Physiotherapy"
+      description: "Rehabilitative services to help patients recover mobility and function, and live pain-free."
+    medical_records:
+      title: "Medical Records"
+      description: "Maintaining comprehensive and secure medical histories to ensure effective and timely treatments."
+  testimonials:
+    section_title:
+      title: "Testimonials"
+      description: "Here's what our satisfied clients are saying about us:"
+    testimonial_1:
+      text: "Working with this team was a transformative experience. Their commitment to excellence and professionalism propelled our project to great heights."
+      name: "Saul Goodman"
+      position: "Ceo & Founder"
+    testimonial_2:
+      text: "The creativity and technical expertise they brought into our project were unmatched. Truly a game-changer for us!"
+      name: "Sara Wilsson"
+      position: "Designer"
+    testimonial_3:
+      text: "Their customer support is commendable. They were there for us at every step, ensuring the process was smooth."
+      name: "Jena Karlis"
+      position: "Store Owner"
+    testimonial_4:
+      text: "A remarkable team that doesn't just deliver but adds value to your project with their insights and expertise."
+      name: "Matt Brandon"
+      position: "Freelancer"
+    testimonial_5:
+      text: "If you're seeking dedicated professionals who can elevate your vision, look no further. Highly recommended!"
+      name: "John Larson"
+      position: "Entrepreneur"
+  footer:
+    footer_info:
+      address: 
+        line1: "123 Health Street"
+        line2: "Wellness City, HC 12345"
+      contact:
+        phone_label: "Phone:"
+        phone: "+1 1234 5678 90"
+        email_label: "Email:"
+        email: "support@medicio.com"
+    social_links: "Social Links"
+    quick_links:
+      title: "Quick Links"
+      home: "Home"
+      mission: "Our Mission"
+      health_services: "Health Services"
+      feedback: "Patient Feedback"
+      privacy: "Privacy & Policy"
+    offerings:
+      title: "Our Offerings"
+      general_consultation: "General Consultation"
+      surgeries: "Medical Surgeries"
+      dental_care: "Dental Care"
+      vision: "Eye & Vision"
+      child_care: "Child Care"
+    newsletter:
+      title: "Stay Updated"
+      description: "Subscribe to our newsletter and get the latest health updates, news, and special offers directly in your inbox."
+      email_placeholder: "Enter your email"
+      subscribe: "Subscribe"

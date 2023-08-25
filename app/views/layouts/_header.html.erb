@@ -9,36 +9,47 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
-        <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto " href="#digital-assistant">Chat-bot</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#services">Services</a></li>
-        <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-        <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
-<!--    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-          </ul>
-        </li>     -->
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <li><a class="nav-link scrollto " href="#hero"><%= t('header.navigation.home') %></a></li>
+        <li><a class="nav-link scrollto " href="#digital-assistant"><%= t('header.navigation.chat_bot') %></a></li>
+        <li><a class="nav-link scrollto" href="#about"><%= t('header.navigation.about') %></a></li>
+        <li><a class="nav-link scrollto" href="#services"><%= t('header.navigation.services') %></a></li>
+        <li><a class="nav-link scrollto" href="#departments"><%= t('header.navigation.departments') %></a></li>
+    <!--<li><a class="nav-link scrollto" href="#doctors"><%= t('header.navigation.doctors') %></a></li>-->
+        <li><a class="nav-link scrollto" href="#contact"><%= t('header.navigation.contact') %></a></li>
       </ul>
+
+      <ul class="nav ">
+        <li class="dropdown">
+          <%= link_to "/", class:"nav-link dropdown-toggle", data: {"bs-toggle": 'dropdown'} do %>
+            <%= tag.div '', class:"flag #{I18n.locale}-flag" %>
+            <%= image_tag "#{I18n.locale}.png", class: "lang-icon me-2" %>
+            <%= t I18n.locale %>
+          <% end %>
+
+          <ul class="">
+            <% I18n.available_locales.each do |locale| %>
+              <li>
+                <% if I18n.locale == locale %>
+                  <span class="d-flex justify-content-start dropdown-item lingua ps-4">
+                    <%= image_tag "#{locale}.png", class: "lang-icon me-2" %>
+                    <%= t(I18n.locale) %>
+                  </span>
+                <% else %>
+                  <a href="<%= root_path(locale: locale) %>" class="d-flex justify-content-start dropdown-item ps-4">
+                    <%= image_tag "#{locale}.png", class: "lang-icon me-2" %>
+                    <%= t(locale) %>
+                  </a>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+      </ul>
+
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
 
-    <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
-
+    <a href="#appointment" class="appointment-btn scrollto"><%= t('header.appointment_btn') %></a>
   </div>
 </header>
 <!-- End Header -->

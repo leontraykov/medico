@@ -8,12 +8,13 @@
           <div class="footer-info">
             <h3>Medicio</h3>
             <p>
-              123 Health Street <br>
-              Wellness City, HC 12345<br><br>
-              <strong>Phone:</strong> +1 1234 5678 90<br>
-              <strong>Email:</strong> support@medicio.com<br>
+              <%= t('footer.footer_info.address.line1') %><br>
+              <%= t('footer.footer_info.address.line2') %><br><br>
+              <strong><%= t('footer.footer_info.contact.phone_label') %> </strong> <%= t('footer.footer_info.contact.phone') %><br>
+              <strong><%= t('footer.footer_info.contact.email_label') %>:</strong> <%= t('footer.footer_info.contact.email') %><br>
             </p>
             <div class="social-links mt-3">
+              <!-- Note: Social links can stay as is since they typically don't require translation -->
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -24,32 +25,32 @@
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Quick Links</h4>
+          <h4><%= t('footer.quick_links.title') %></h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Mission</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Health Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Patient Feedback</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy & Policy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.quick_links.home') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.quick_links.mission') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.quick_links.health_services') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.quick_links.feedback') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.quick_links.privacy') %></a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Offerings</h4>
+          <h4><%= t('footer.offerings.title') %></h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">General Consultation</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Medical Surgeries</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Dental Care</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Eye & Vision</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Child Care</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.offerings.general_consultation') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.offerings.surgeries') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.offerings.dental_care') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.offerings.vision') %></a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#"><%= t('footer.offerings.child_care') %></a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Stay Updated</h4>
-          <p>Subscribe to our newsletter and get the latest health updates, news, and special offers directly in your inbox.</p>
+          <h4><%= t('footer.newsletter.title') %></h4>
+          <p><%= t('footer.newsletter.description') %></p>
           <form action="" method="post">
-            <input type="email" name="email" placeholder="Enter your email"><input type="submit" value="Subscribe">
+            <input type="email" name="email" placeholder="<%= t('footer.newsletter.email_placeholder') %>"><input type="submit" value="<%= t('footer.newsletter.subscribe') %>">
           </form>
         </div>
 

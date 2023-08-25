@@ -3,77 +3,81 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>Pricing</h2>
-      <p>Choose a healthcare plan that's right for you and your loved ones. We offer a range of packages tailored to different needs. Uncompromised quality, fair prices.</p>    </div>
-
+      <h2><%= t("pricing.section_title.title") %></h2>
+      <p><%= t("pricing.section_title.description") %></p>    
+    </div>
 
     <div class="row">
 
+      <!-- Beginner Plan -->
       <div class="col-lg-3 col-md-6">
         <div class="box" data-aos="fade-up" data-aos-delay="100">
-          <h3>Beginner</h3>
-          <h4><sup>$</sup>0<span> / month</span></h4>
+          <h3><%= t("pricing.beginner.title") %></h3>
+          <h4><sup>$</sup><%= t("pricing.beginner.price") %><span> / month</span></h4>
           <ul>
-            <li>Initial health checkup</li>
-            <li>24/7 online support</li>
-            <li>Access to health webinars</li>
-            <li class="na">Premium support</li>
-            <li class="na">Specialist consultations</li>
+            <li><%= t("pricing.beginner.features.0") %></li>
+            <li><%= t("pricing.beginner.features.1") %></li>
+            <li><%= t("pricing.beginner.features.2") %></li>
+            <li class="na"><%= t("pricing.beginner.features.3") %></li>
+            <li class="na"><%= t("pricing.beginner.features.4") %></li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Get Started</a>
+            <a href="#" class="btn-buy"><%= t("pricing.beginner.button") %></a>
           </div>
         </div>
       </div>
 
+      <!-- Pro Health Plan -->
       <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
         <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-          <h3>Pro Health</h3>
-          <h4><sup>$</sup>19<span> / month</span></h4>
+          <h3><%= t("pricing.pro_health.title") %></h3>
+          <h4><sup>$</sup><%= t("pricing.pro_health.price") %><span> / month</span></h4>
           <ul>
-            <li>Everything in Beginner</li>
-            <li>2 free doctor visits</li>
-            <li>Monthly health newsletter</li>
-            <li>Special health events</li>
-            <li class="na">Specialist consultations</li>
+            <li><%= t("pricing.pro_health.features.0") %></li>
+            <li><%= t("pricing.pro_health.features.1") %></li>
+            <li><%= t("pricing.pro_health.features.2") %></li>
+            <li><%= t("pricing.pro_health.features.3") %></li>
+            <li class="na"><%= t("pricing.pro_health.features.4") %></li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Get Pro</a>
+            <a href="#" class="btn-buy"><%= t("pricing.pro_health.button") %></a>
           </div>
         </div>
       </div>
 
+      <!-- Health Elite Plan -->
       <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
         <div class="box" data-aos="fade-up" data-aos-delay="300">
-          <h3>Health Elite</h3>
-          <h4><sup>$</sup>29<span> / month</span></h4>
+          <h3><%= t("pricing.health_elite.title") %></h3>
+          <h4><sup>$</sup><%= t("pricing.health_elite.price") %><span> / month</span></h4>
           <ul>
-            <li>Everything in Pro Health</li>
-            <li>Unlimited doctor visits</li>
-            <li>Access to all health events</li>
-            <li>Priority support</li>
-            <li>1 free specialist consultation</li>
+            <li><%= t("pricing.health_elite.features.0") %></li>
+            <li><%= t("pricing.health_elite.features.1") %></li>
+            <li><%= t("pricing.health_elite.features.2") %></li>
+            <li><%= t("pricing.health_elite.features.3") %></li>
+            <li><%= t("pricing.health_elite.features.4") %></li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Go Elite</a>
+            <a href="#" class="btn-buy"><%= t("pricing.health_elite.button") %></a>
           </div>
         </div>
       </div>
 
+      <!-- Ultimate Health Plan -->
       <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
         <div class="box" data-aos="fade-up" data-aos-delay="400">
-          <span class="advanced">Pinnacle</span>
-          <h3>Ultimate Health</h3>
-          <h4><sup>$</sup>49<span> / month</span></h4>
+          <span class="advanced"><%= t("pricing.ultimate_health.tag") %></span>
+          <h3><%= t("pricing.ultimate_health.title") %></h3>
+          <h4><sup>$</sup><%= t("pricing.ultimate_health.price") %><span> / month</span></h4>
           <ul>
-            <li>Everything in Health Elite</li>
-            <li>Personal health manager</li>
-            <li>Diet and fitness plans</li>
-            <li>Free health workshops</li>
-            <li>Unlimited specialist consultations</li>
+            <li><%= t("pricing.ultimate_health.features.0") %></li>
+            <li><%= t("pricing.ultimate_health.features.1") %></li>
+            <li><%= t("pricing.ultimate_health.features.2") %></li>
+            <li><%= t("pricing.ultimate_health.features.3") %></li>
+            <li><%= t("pricing.ultimate_health.features.4") %></li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Achieve Ultimate</a>
+            <a href="#" class="btn-buy"><%= t("pricing.ultimate_health.button") %></a>
           </div>
         </div>
       </div>
