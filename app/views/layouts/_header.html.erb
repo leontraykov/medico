@@ -16,11 +16,9 @@
         <li><a class="nav-link scrollto" href="#departments"><%= t('header.navigation.departments') %></a></li>
     <!--<li><a class="nav-link scrollto" href="#doctors"><%= t('header.navigation.doctors') %></a></li>-->
         <li><a class="nav-link scrollto" href="#contact"><%= t('header.navigation.contact') %></a></li>
-      </ul>
 
-      <ul class="nav ">
         <li class="dropdown">
-          <%= link_to "/", class:"nav-link dropdown-toggle", data: {"bs-toggle": 'dropdown'} do %>
+          <%= link_to "/", class:"nav-link dropdown-toggle justify-content-start", data: {"bs-toggle": 'dropdown'} do %>
             <%= tag.div '', class:"flag #{I18n.locale}-flag" %>
             <%= image_tag "#{I18n.locale}.png", class: "lang-icon me-2" %>
             <%= t I18n.locale %>
