@@ -11,28 +11,52 @@
       <div class="swiper-wrapper align-items-center">
 
         <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-1.jpg", class: "img-fluid", alt: "") %>
+          <%= link_to image_path("gallery/gallery-1.jpg"), class: "gallery-lightbox" do %>
+              <%= image_tag "gallery/gallery-1.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
+                  </div>
+
+                  <div class="swiper-slide">
+          <%= link_to image_path("gallery/gallery-2.jpg"), class: "gallery-lightbox" do %>
+              <%= image_tag "gallery/gallery-2.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
+                  </div>
+
+                  <div class="swiper-slide">
+          <%= link_to image_path("gallery/gallery-3.jpg"), class: "gallery-lightbox" do %>
+              <%= image_tag "gallery/gallery-3.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
         </div>
+
         <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-2.jpg", class: "img-fluid", alt: "") %>
+        
+          <%= link_to image_path("gallery/gallery-4.jpg"), class: "gallery-lightbox" do %>
+            <%= image_tag "gallery/gallery-4.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
         </div>
+
         <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-3.jpg", class: "img-fluid", alt: "") %>
+          <%= link_to image_path("gallery/gallery-5.jpg"), class: "gallery-lightbox" do %>
+            <%= image_tag "gallery/gallery-5.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
         </div>
+
         <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-4.jpg", class: "img-fluid", alt: "") %>
+          <%= link_to image_path("gallery/gallery-6.jpg"), class: "gallery-lightbox" do %>
+            <%= image_tag "gallery/gallery-6.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
         </div>
+
         <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-5.jpg", class: "img-fluid", alt: "") %>
+          <%= link_to image_path("gallery/gallery-7.jpg"), class: "gallery-lightbox" do %>
+            <%= image_tag "gallery/gallery-7.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
         </div>
+
         <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-6.jpg", class: "img-fluid", alt: "") %>
-        </div>
-        <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-7.jpg", class: "img-fluid", alt: "") %>
-        </div>
-        <div class="swiper-slide">
-          <%= image_tag("gallery/gallery-8.jpg", class: "img-fluid", alt: "") %>
+          <%= link_to image_path("gallery/gallery-8.jpg"), class: "gallery-lightbox" do %>
+            <%= image_tag "gallery/gallery-8.jpg", class: "img-fluid", alt: "" %>
+          <% end %>
         </div>
 
       </div>

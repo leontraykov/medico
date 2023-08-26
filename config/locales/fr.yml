@@ -254,3 +254,18 @@ fr:
       description: "Abonnez-vous à notre newsletter pour recevoir les dernières mises à jour sur la santé, les nouvelles et les offres spéciales directement dans votre boîte de réception."
       email_placeholder: "Entrez votre courriel"
       subscribe: "S'abonner"
+  counts:
+    doctors:
+      title: "Médecins"
+      description: "85 médecins consultent dans notre clinique."
+    departments:
+      title: "Départements"
+      description: "Nous proposons 26 départements spécialisés."
+    research_lab:
+      title: "Laboratoires de recherche"
+      description: "14 laboratoires de recherche avancée fonctionnent dans notre établissement."
+    awards:
+      title: "Récompenses"
+      description: "Notre équipe a été reconnue avec 150 récompenses."
+    find_out_more: "En savoir plus »"
+    

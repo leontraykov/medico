@@ -300,3 +300,17 @@ es:
       description: "Suscríbase a nuestro boletín y obtenga las últimas actualizaciones de salud, noticias y ofertas especiales directamente en su bandeja de entrada."
       email_placeholder: "Ingrese su correo electrónico"
       subscribe: "Suscribirse"
+  counts:
+    doctors:
+      title: "Doctores"
+      description: "85 médicos consultan en nuestra clínica."
+    departments:
+      title: "Departamentos"
+      description: "Ofrecemos 26 departamentos especializados."
+    research_lab:
+      title: "Laboratorios de investigación"
+      description: "14 laboratorios de investigación avanzada operan en nuestras instalaciones."
+    awards:
+      title: "Premios"
+      description: "Nuestro equipo ha sido reconocido con 150 premios."
+    find_out_more: "Descubre más »"

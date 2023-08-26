@@ -2,6 +2,8 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
+import PureCounter from "@srexi/purecounterjs";
+const pure = new PureCounter();
 
 (function() {
   "use strict";
@@ -256,7 +258,7 @@ import * as bootstrap from "bootstrap"
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
       mirror: false

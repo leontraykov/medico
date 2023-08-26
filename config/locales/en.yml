@@ -300,3 +300,17 @@ en:
       description: "Subscribe to our newsletter and get the latest health updates, news, and special offers directly in your inbox."
       email_placeholder: "Enter your email"
       subscribe: "Subscribe"
+  counts:
+    doctors:
+      title: "Doctors"
+      description: "85 doctors consult in our clinic."
+    departments:
+      title: "Departments"
+      description: "We offer 26 specialized departments."
+    research_lab:
+      title: "Research Labs"
+      description: "14 advanced research labs operate in our facility."
+    awards:
+      title: "Awards"
+      description: "Our team has been recognized with 150 awards."
+    find_out_more: "Find out more »"
