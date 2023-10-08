@@ -16,6 +16,7 @@ class QuestionsController < ApplicationController
           Modern Equipment: State-of-the-art technology for accurate diagnoses.
           Pharmacy: On-site, offering prescribed medications.
           Patient Care: Dedicated nursing and support staff.
+      All doctors works from 7:30am till 8:30pm, at night only Emergency
       Your role is to provide clear, concise info to patient queries, direct them to the right specialist, or guide them through the available services. Ensure timely and efficient responses.
     LONGTEXT
 

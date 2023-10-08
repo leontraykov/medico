@@ -3,9 +3,10 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
 import PureCounter from "@srexi/purecounterjs";
-const pure = new PureCounter();
 
 (function() {
+  document.addEventListener('turbo:load', () => {
+
   "use strict";
 
   /**
@@ -268,6 +269,6 @@ const pure = new PureCounter();
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
-
+    new PureCounter();
+  });
 })()
